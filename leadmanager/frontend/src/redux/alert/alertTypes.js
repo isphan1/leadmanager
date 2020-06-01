@@ -1,0 +1,4 @@
+export const ERROR_ALERT = "ERROR_ALERT"
+export const MESSAGE_ALERT = "MESSAGE_ALERT"
+export const CLEAR_ALERT = "CLEAR_ALERT"
+export const CLEAR_MESSAGE = "CLEAR_MESSAGE"

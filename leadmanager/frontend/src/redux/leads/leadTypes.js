@@ -1,0 +1,6 @@
+export const GET_REQUEST = "GET_REQUEST"
+export const GET_LEADS = "GET_LEADS"
+export const GET_ERRORS = "GET_ERRORS"
+export const CREATE_LEAD = "CREATE_LEAD"
+export const DELETE_LEAD = "DELETE_LEAD"
+export const UPDATE_LEAD = "UPDATE_LEAD"

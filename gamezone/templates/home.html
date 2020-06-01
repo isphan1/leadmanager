@@ -1,0 +1,52 @@
+{%extends 'main.html'%}
+{%block content%}
+
+    {%for d in data.total%}
+        <p>{{d.order.product}}</p>
+    {%endfor%}
+
+    <!-- {%for d in data.book%}
+        <p>Name - {{d.author__name}} ,
+        Sale - {{d.total}}</p>
+    {%endfor%} -->
+
+    {%for x in data.product%}
+        <li>price - {{x}}</li>
+    {%endfor%}
+
+    {%for d in data.book%}
+
+    <p>book - {{d.title}} | {{d.price}} | {{d.total}} | Author - 
+
+        {%for a in d.author.all%}
+        {{ a }},
+        {%endfor%}
+
+    </p>
+
+    {%endfor%}
+
+    {%for d in data.author%}
+    <p>{{d}} - {{d.total_price}} - {{d.total_book}}</p>
+    {%endfor%}
+
+
+    <!-- {{data.author}} -->
+
+    {%for d in data.user%}
+    <p>{{d}} | {{d.latest_order}}</p>
+    {%endfor%}
+
+    <h1>Orders list</h1>
+
+    {%for d in data.P2F_ACCESS%}
+    {{d.total}}
+    {%for x in d.order_set.all%}
+
+        <li>{{x.total}}</li>
+    {%endfor%}
+    {%endfor%}
+
+    {{data.order}}
+
+{%endblock%}
